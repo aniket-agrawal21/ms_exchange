@@ -1,0 +1,3777 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="">bcb14ae6c3e320109d2353a3a840dda4</category>
+        <copied_from>6305c1eec32220109d2353a3a840ddfb</copied_from>
+        <copied_from_name>Look up Attachment by Attachment</copied_from_name>
+        <description>&lt;p id="short_desc"&gt;This action provides Attachment when Attachment ID is provided&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Inputs&lt;/strong&gt; :&lt;/p&gt;
+&lt;ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Attachment ID&lt;/strong&gt; - Attachment ID of the Attachment&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Outputs&lt;/strong&gt; :&lt;/p&gt;
+&lt;ul id="outputs"&gt;
+&lt;li&gt;&lt;strong&gt;Status&lt;/strong&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure in Microsoft Exchange Server, Status is set to “Error”.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Content&lt;/strong&gt; - Content of the Attachment in the Binary Format&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Name&lt;/strong&gt; - Name of the Attachment as saved in the Exchange Server&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Content Type&lt;/strong&gt; - Content Type of the Attachment in text format&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Error Message&lt;/strong&gt; - Reason for error. Populated only when an error occurs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;To use this action, the corresponding Microsoft Exchange Server connection and credential must be created and associated with the Microsoft Exchange Server Connection &amp; Credential alias. &lt;a href="http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias" target="_blank" rel="noopener"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Requires a subscription for production use. &lt;a href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information" target="_blank" rel="noopener"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
+        <ih_action>true</ih_action>
+        <internal_name>look_up_attachment_by_attachment_id</internal_name>
+        <label_cache>[{"name":"{{action.attachment_id}}","label":"action➛Attachment ID","type":"action","ref":""},{"name":"{{step[2e301dc0-6dc7-42bc-89e2-8fe803c086fb].error_message}}","label":"step➛SOAP step➛Error Message","type":"step","ref":""},{"name":"{{step[2e301dc0-6dc7-42bc-89e2-8fe803c086fb].response_body}}","label":"step➛SOAP step➛Response Body","type":"step","ref":""},{"name":"{{step[2e301dc0-6dc7-42bc-89e2-8fe803c086fb].status_code}}","label":"step➛SOAP step➛Status Code","type":"step","ref":""},{"name":"{{step[30733be5-28cd-48ca-aa0e-6c0211def460].variable}}","label":"step➛Post Processing Step➛variable","type":"step","ref":""},{"name":"{{step[30733be5-28cd-48ca-aa0e-6c0211def460].name}}","label":"step➛Post Processing Step➛name","type":"step","ref":""},{"name":"{{step[30733be5-28cd-48ca-aa0e-6c0211def460].content_type}}","label":"step➛Post Processing Step➛content_type","type":"step","ref":""},{"name":"{{step[30733be5-28cd-48ca-aa0e-6c0211def460].status}}","label":"step➛Post Processing Step➛status","type":"step","ref":""},{"name":"{{step[30733be5-28cd-48ca-aa0e-6c0211def460].error_message}}","label":"step➛Post Processing Step➛error_message","type":"step","ref":""},{"name":"{{step[30733be5-28cd-48ca-aa0e-6c0211def460].content}}","label":"step➛Post Processing Step➛content","type":"step","ref":""}]</label_cache>
+        <latest_snapshot>a71b626edb236c1097cd6f691396193d</latest_snapshot>
+        <master_snapshot>061b226edb236c1097cd6f691396194b</master_snapshot>
+        <name>Look up Attachment by Attachment ID</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a6e9e6eadb236c1097cd6f69139619bc</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Look up Attachment by Attachment ID</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Testt124" source="x_snc_testt124">81512e62db236c1097cd6f69139619d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_a6e9e6eadb236c1097cd6f69139619bc</sys_update_name>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:58</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=a6e9e6eadb236c1097cd6f69139619bc"/>
+    <sys_variable_value action="delete_multiple" query="document_key=a6e9e6eadb236c1097cd6f69139619bc"/>
+    <sys_element_mapping action="delete_multiple" query="id=a6e9e6eadb236c1097cd6f69139619bc"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>content</field>
+        <id>a6e9e6eadb236c1097cd6f69139619bc</id>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:45</sys_created_on>
+        <sys_id>8be92aeadb236c1097cd6f6913961961</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:45</sys_updated_on>
+        <table>var__m_sys_hub_action_output_a6e9e6eadb236c1097cd6f69139619bc</table>
+        <value>{{step[30733be5-28cd-48ca-aa0e-6c0211def460].content}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>content_type</field>
+        <id>a6e9e6eadb236c1097cd6f69139619bc</id>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:45</sys_created_on>
+        <sys_id>c7e92aeadb236c1097cd6f6913961961</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:45</sys_updated_on>
+        <table>var__m_sys_hub_action_output_a6e9e6eadb236c1097cd6f69139619bc</table>
+        <value>{{step[30733be5-28cd-48ca-aa0e-6c0211def460].content_type}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>error_message</field>
+        <id>a6e9e6eadb236c1097cd6f69139619bc</id>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:45</sys_created_on>
+        <sys_id>43e92aeadb236c1097cd6f6913961961</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:45</sys_updated_on>
+        <table>var__m_sys_hub_action_output_a6e9e6eadb236c1097cd6f69139619bc</table>
+        <value>{{step[30733be5-28cd-48ca-aa0e-6c0211def460].error_message}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>name</field>
+        <id>a6e9e6eadb236c1097cd6f69139619bc</id>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:45</sys_created_on>
+        <sys_id>07e92aeadb236c1097cd6f6913961961</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:45</sys_updated_on>
+        <table>var__m_sys_hub_action_output_a6e9e6eadb236c1097cd6f69139619bc</table>
+        <value>{{step[30733be5-28cd-48ca-aa0e-6c0211def460].name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status</field>
+        <id>a6e9e6eadb236c1097cd6f69139619bc</id>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:45</sys_created_on>
+        <sys_id>4fe92aeadb236c1097cd6f6913961961</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:45</sys_updated_on>
+        <table>var__m_sys_hub_action_output_a6e9e6eadb236c1097cd6f69139619bc</table>
+        <value>{{step[30733be5-28cd-48ca-aa0e-6c0211def460].status}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=a6e9e6eadb236c1097cd6f69139619bc^sys_idNOT IN76e9e6eadb236c1097cd6f69139619e1,aee9e6eadb236c1097cd6f69139619c9"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Look up Attachment by Attachment ID">a6e9e6eadb236c1097cd6f69139619bc</action>
+        <cid>30733be5-28cd-48ca-aa0e-6c0211def460</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Post Processing Step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:43</sys_created_on>
+        <sys_id>76e9e6eadb236c1097cd6f69139619e1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:50</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=76e9e6eadb236c1097cd6f69139619e1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>76e9e6eadb236c1097cd6f69139619e1</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:44</sys_created_on>
+        <sys_id>83e92aeadb236c1097cd6f6913961936</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:44</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+    if (inputs.status_code == '200' &amp;&amp; inputs.response) {
+      
+        var xmlDoc = new XMLDocument2();
+        xmlDoc.parseXML(inputs.response);
+        var responseStatus = xmlDoc.getNode(
+            "/s:Envelope/s:Body/m:GetAttachmentResponse/m:ResponseMessages/m:GetAttachmentResponseMessage"
+        ).getAttribute('ResponseClass');
+        if (responseStatus === 'Success') {
+            outputs.status = 'Success';
+            outputs.name = xmlDoc.getNodeText(
+                "/s:Envelope/s:Body/m:GetAttachmentResponse/m:ResponseMessages/m:GetAttachmentResponseMessage/m:Attachments/t:FileAttachment/t:Name");
+            outputs.content_type = xmlDoc.getNodeText(
+                "/s:Envelope/s:Body/m:GetAttachmentResponse/m:ResponseMessages/m:GetAttachmentResponseMessage/m:Attachments/t:FileAttachment/t:ContentType");
+			outputs.content = xmlDoc.getNodeText(
+                "/s:Envelope/s:Body/m:GetAttachmentResponse/m:ResponseMessages/m:GetAttachmentResponseMessage/m:Attachments/t:FileAttachment/t:Content");
+        } else
+            outputs = new ExchangeErrorHandler().lookUpAttachment(
+                inputs, outputs);
+    } else
+        outputs = new ExchangeErrorHandler().lookUpAttachment(
+            inputs, outputs);
+})(inputs, outputs);</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>76e9e6eadb236c1097cd6f69139619e1</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:44</sys_created_on>
+        <sys_id>cfe92aeadb236c1097cd6f6913961935</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:44</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=76e9e6eadb236c1097cd6f69139619e1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>76e9e6eadb236c1097cd6f69139619e1</id>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:44</sys_created_on>
+        <sys_id>8be92aeadb236c1097cd6f6913961935</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:44</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>error_message</field>
+        <id>76e9e6eadb236c1097cd6f69139619e1</id>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:50</sys_created_on>
+        <sys_id>751bee2edb236c1097cd6f69139619fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:50</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_76e9e6eadb236c1097cd6f69139619e1</table>
+        <value>{{step[2e301dc0-6dc7-42bc-89e2-8fe803c086fb].error_message}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response</field>
+        <id>76e9e6eadb236c1097cd6f69139619e1</id>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:50</sys_created_on>
+        <sys_id>f91bee2edb236c1097cd6f69139619fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:50</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_76e9e6eadb236c1097cd6f69139619e1</table>
+        <value>{{step[2e301dc0-6dc7-42bc-89e2-8fe803c086fb].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>76e9e6eadb236c1097cd6f69139619e1</id>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:44</sys_created_on>
+        <sys_id>4fe92aeadb236c1097cd6f6913961935</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:44</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status_code</field>
+        <id>76e9e6eadb236c1097cd6f69139619e1</id>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:50</sys_created_on>
+        <sys_id>391bee2edb236c1097cd6f69139619fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:50</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_76e9e6eadb236c1097cd6f69139619e1</table>
+        <value>{{step[2e301dc0-6dc7-42bc-89e2-8fe803c086fb].status_code}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=76e9e6eadb236c1097cd6f69139619e1^sys_idNOT IN3ae9e6eadb236c1097cd6f69139619fe,bae9e6eadb236c1097cd6f69139619e4,bae9e6eadb236c1097cd6f69139619eb"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status_code</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Post Processing Step">76e9e6eadb236c1097cd6f69139619e1</model>
+        <model_id>76e9e6eadb236c1097cd6f69139619e1</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_76e9e6eadb236c1097cd6f69139619e1</name>
+        <next_element/>
+        <order>200</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:43</sys_created_on>
+        <sys_id>3ae9e6eadb236c1097cd6f69139619fe</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>error_message</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Post Processing Step">76e9e6eadb236c1097cd6f69139619e1</model>
+        <model_id>76e9e6eadb236c1097cd6f69139619e1</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_76e9e6eadb236c1097cd6f69139619e1</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:43</sys_created_on>
+        <sys_id>bae9e6eadb236c1097cd6f69139619e4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Post Processing Step">76e9e6eadb236c1097cd6f69139619e1</model>
+        <model_id>76e9e6eadb236c1097cd6f69139619e1</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_76e9e6eadb236c1097cd6f69139619e1</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:43</sys_created_on>
+        <sys_id>bae9e6eadb236c1097cd6f69139619eb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=76e9e6eadb236c1097cd6f69139619e1^sys_idNOT IN47e92aeadb236c1097cd6f691396192c,4fe92aeadb236c1097cd6f6913961925,f6e92aeadb236c1097cd6f6913961905,f6e92aeadb236c1097cd6f691396190c,fee92aeadb236c1097cd6f6913961912"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=c3836dc6-0cfc-42e4-bd91-f19761e9face</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>content</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>content</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Post Processing Step">76e9e6eadb236c1097cd6f69139619e1</model>
+        <model_id>76e9e6eadb236c1097cd6f69139619e1</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_76e9e6eadb236c1097cd6f69139619e1</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:44</sys_created_on>
+        <sys_id>47e92aeadb236c1097cd6f691396192c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=56b158c5-ca23-4b14-9c1c-b664896fbaec</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>error_message</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>error_message</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Post Processing Step">76e9e6eadb236c1097cd6f69139619e1</model>
+        <model_id>76e9e6eadb236c1097cd6f69139619e1</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_76e9e6eadb236c1097cd6f69139619e1</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:44</sys_created_on>
+        <sys_id>4fe92aeadb236c1097cd6f6913961925</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=19ca9c73-554d-4aaa-8429-f3e439301903</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>name</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Post Processing Step">76e9e6eadb236c1097cd6f69139619e1</model>
+        <model_id>76e9e6eadb236c1097cd6f69139619e1</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_76e9e6eadb236c1097cd6f69139619e1</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:43</sys_created_on>
+        <sys_id>f6e92aeadb236c1097cd6f6913961905</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=f06e1b2a-5306-493e-a033-0cb63b814e8e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>content_type</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>content_type</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Post Processing Step">76e9e6eadb236c1097cd6f69139619e1</model>
+        <model_id>76e9e6eadb236c1097cd6f69139619e1</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_76e9e6eadb236c1097cd6f69139619e1</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:43</sys_created_on>
+        <sys_id>f6e92aeadb236c1097cd6f691396190c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=6c83cfda-f940-4523-95cb-b8f097da1318</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>status</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Post Processing Step">76e9e6eadb236c1097cd6f69139619e1</model>
+        <model_id>76e9e6eadb236c1097cd6f69139619e1</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_76e9e6eadb236c1097cd6f69139619e1</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:44</sys_created_on>
+        <sys_id>fee92aeadb236c1097cd6f6913961912</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Look up Attachment by Attachment ID">a6e9e6eadb236c1097cd6f69139619bc</action>
+        <cid>2e301dc0-6dc7-42bc-89e2-8fe803c086fb</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>SOAP step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="SOAP">6e61d40e73031300e6561afe2ff6a704</step_type>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:42</sys_created_on>
+        <sys_id>aee9e6eadb236c1097cd6f69139619c9</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:49</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=aee9e6eadb236c1097cd6f69139619c9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>aee9e6eadb236c1097cd6f69139619c9</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:49</sys_created_on>
+        <sys_id>291bee2edb236c1097cd6f69139619d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:49</sys_updated_on>
+        <value>https://exchange-2016.servicenow.com/EWS/Exchange.asmx</value>
+        <variable display_value="Endpoint">9a521c0e73031300e6561afe2ff6a709</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>aee9e6eadb236c1097cd6f69139619c9</document_key>
+        <order>40</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:43</sys_created_on>
+        <sys_id>3ae9e6eadb236c1097cd6f69139619dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:43</sys_updated_on>
+        <value>manually</value>
+        <variable display_value="Build Envelope">b3721c0e73031300e6561afe2ff6a7a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>aee9e6eadb236c1097cd6f69139619c9</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:43</sys_created_on>
+        <sys_id>3ee9e6eadb236c1097cd6f69139619dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:43</sys_updated_on>
+        <value>Select a WSDL</value>
+        <variable display_value="Select a WSDL">e5b29c0e73031300e6561afe2ff6a713</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>aee9e6eadb236c1097cd6f69139619c9</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:43</sys_created_on>
+        <sys_id>76e9e6eadb236c1097cd6f69139619dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:43</sys_updated_on>
+        <value>d666400bdb3f27001b5857935e96193f</value>
+        <variable display_value="Connection Alias">33a1180e73031300e6561afe2ff6a7b9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>aee9e6eadb236c1097cd6f69139619c9</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:43</sys_created_on>
+        <sys_id>7ae9e6eadb236c1097cd6f69139619dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:43</sys_updated_on>
+        <value>9df941930a00067818fcb3834b216f8f</value>
+        <variable display_value="Capabilities">1bd3635a738b1300803594596bf6a7e9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>aee9e6eadb236c1097cd6f69139619c9</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:43</sys_created_on>
+        <sys_id>b2e9e6eadb236c1097cd6f69139619dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:43</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">2d922f1a738b1300803594596bf6a727</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>aee9e6eadb236c1097cd6f69139619c9</document_key>
+        <order>110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:43</sys_created_on>
+        <sys_id>b6e9e6eadb236c1097cd6f69139619dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:43</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Headers">72171c8e73031300e6561afe2ff6a7c2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>aee9e6eadb236c1097cd6f69139619c9</document_key>
+        <order>70</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:43</sys_created_on>
+        <sys_id>fee9e6eadb236c1097cd6f69139619dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:43</sys_updated_on>
+        <value>POST</value>
+        <variable display_value="SOAP Action">2d13d84e73031300e6561afe2ff6a736</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=aee9e6eadb236c1097cd6f69139619c9"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>aee9e6eadb236c1097cd6f69139619c9</id>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:43</sys_created_on>
+        <sys_id>fae9e6eadb236c1097cd6f69139619db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:43</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_6e61d40e73031300e6561afe2ff6a704</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>build_envelope</field>
+        <id>aee9e6eadb236c1097cd6f69139619c9</id>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:43</sys_created_on>
+        <sys_id>36e9e6eadb236c1097cd6f69139619dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:43</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_6e61d40e73031300e6561afe2ff6a704</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>aee9e6eadb236c1097cd6f69139619c9</id>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:43</sys_created_on>
+        <sys_id>b2e9e6eadb236c1097cd6f69139619db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:43</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_6e61d40e73031300e6561afe2ff6a704</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>aee9e6eadb236c1097cd6f69139619c9</id>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:43</sys_created_on>
+        <sys_id>bee9e6eadb236c1097cd6f69139619db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:43</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_6e61d40e73031300e6561afe2ff6a704</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>endpoint</field>
+        <id>aee9e6eadb236c1097cd6f69139619c9</id>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:49</sys_created_on>
+        <sys_id>a51bee2edb236c1097cd6f69139619d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:49</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_6e61d40e73031300e6561afe2ff6a704</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>aee9e6eadb236c1097cd6f69139619c9</id>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:43</sys_created_on>
+        <sys_id>fee9e6eadb236c1097cd6f69139619da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:43</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_6e61d40e73031300e6561afe2ff6a704</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>select_a_wsdl</field>
+        <id>aee9e6eadb236c1097cd6f69139619c9</id>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:43</sys_created_on>
+        <sys_id>76e9e6eadb236c1097cd6f69139619db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:43</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_6e61d40e73031300e6561afe2ff6a704</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>soap_action</field>
+        <id>aee9e6eadb236c1097cd6f69139619c9</id>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:43</sys_created_on>
+        <sys_id>3ae9e6eadb236c1097cd6f69139619db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:43</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_6e61d40e73031300e6561afe2ff6a704</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>soap_envelope</field>
+        <id>aee9e6eadb236c1097cd6f69139619c9</id>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:43</sys_created_on>
+        <sys_id>72e9e6eadb236c1097cd6f69139619dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:43</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_6e61d40e73031300e6561afe2ff6a704</table>
+        <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+&lt;soap:Header&gt;
+        &lt;t:RequestServerVersion Version="Exchange2013" /&gt;
+&lt;/soap:Header&gt;
+  &lt;soap:Body&gt;
+    &lt;m:GetAttachment&gt;
+      &lt;m:AttachmentShape/&gt;
+      &lt;m:AttachmentIds&gt;
+        &lt;t:AttachmentId Id="{{action.attachment_id}}"/&gt;
+      &lt;/m:AttachmentIds&gt;
+    &lt;/m:GetAttachment&gt;
+  &lt;/soap:Body&gt;
+&lt;/soap:Envelope&gt;</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=aee9e6eadb236c1097cd6f69139619c9^sys_idNOT IN2ee9e6eadb236c1097cd6f69139619cf"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=c242814b-5794-4ca4-9688-b0b6487c4a11</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="SOAP step">aee9e6eadb236c1097cd6f69139619c9</model>
+        <model_id>aee9e6eadb236c1097cd6f69139619c9</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_aee9e6eadb236c1097cd6f69139619c9</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:43</sys_created_on>
+        <sys_id>2ee9e6eadb236c1097cd6f69139619cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_action_input action="delete_multiple" query="model=a6e9e6eadb236c1097cd6f69139619bc^sys_idNOT INe2e9e6eadb236c1097cd6f69139619c1"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=092679c8-f1b2-4d67-935a-41120274d917</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>attachment_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Attachment ID</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look up Attachment by Attachment ID">a6e9e6eadb236c1097cd6f69139619bc</model>
+        <model_id>a6e9e6eadb236c1097cd6f69139619bc</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_a6e9e6eadb236c1097cd6f69139619bc</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:42</sys_created_on>
+        <sys_id>e2e9e6eadb236c1097cd6f69139619c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="delete_multiple" query="model=a6e9e6eadb236c1097cd6f69139619bc^sys_idNOT IN0fe92aeadb236c1097cd6f6913961948,43e92aeadb236c1097cd6f6913961950,87e92aeadb236c1097cd6f6913961957,8be92aeadb236c1097cd6f6913961939,c7e92aeadb236c1097cd6f6913961941"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=260a69dd-cd6e-4df5-9c4d-a27236758af5</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Status</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look up Attachment by Attachment ID">a6e9e6eadb236c1097cd6f69139619bc</model>
+        <model_id>a6e9e6eadb236c1097cd6f69139619bc</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_a6e9e6eadb236c1097cd6f69139619bc</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:44</sys_created_on>
+        <sys_id>0fe92aeadb236c1097cd6f6913961948</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=2ccdd52b-77b3-4dc5-92a4-91807adc932f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>content</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Content</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look up Attachment by Attachment ID">a6e9e6eadb236c1097cd6f69139619bc</model>
+        <model_id>a6e9e6eadb236c1097cd6f69139619bc</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_a6e9e6eadb236c1097cd6f69139619bc</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:44</sys_created_on>
+        <sys_id>43e92aeadb236c1097cd6f6913961950</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=97228bc0-4816-48c3-8f1a-36320e184249</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>error_message</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Error Message</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look up Attachment by Attachment ID">a6e9e6eadb236c1097cd6f69139619bc</model>
+        <model_id>a6e9e6eadb236c1097cd6f69139619bc</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_a6e9e6eadb236c1097cd6f69139619bc</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:44</sys_created_on>
+        <sys_id>87e92aeadb236c1097cd6f6913961957</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=51afcc8a-4f44-483d-835e-a6445e9ee9ec</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>name</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Name</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look up Attachment by Attachment ID">a6e9e6eadb236c1097cd6f69139619bc</model>
+        <model_id>a6e9e6eadb236c1097cd6f69139619bc</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_a6e9e6eadb236c1097cd6f69139619bc</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:44</sys_created_on>
+        <sys_id>8be92aeadb236c1097cd6f6913961939</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=2c567999-1976-42c2-9004-5a173e47b17d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>content_type</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Content Type</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look up Attachment by Attachment ID">a6e9e6eadb236c1097cd6f69139619bc</model>
+        <model_id>a6e9e6eadb236c1097cd6f69139619bc</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_a6e9e6eadb236c1097cd6f69139619bc</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:44</sys_created_on>
+        <sys_id>c7e92aeadb236c1097cd6f6913961941</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_a6e9e6eadb236c1097cd6f69139619bc^sys_idNOT IN66e9e6eadb236c1097cd6f69139619c7"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>attachment_id</element>
+        <help/>
+        <hint/>
+        <label>Attachment ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_a6e9e6eadb236c1097cd6f69139619bc</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:42</sys_created_on>
+        <sys_id>66e9e6eadb236c1097cd6f69139619c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Testt124" source="x_snc_testt124">81512e62db236c1097cd6f69139619d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_a6e9e6eadb236c1097cd6f69139619bc^sys_idNOT IN03e92aeadb236c1097cd6f691396195d,0fe92aeadb236c1097cd6f691396193f,43e92aeadb236c1097cd6f6913961947,87e92aeadb236c1097cd6f691396194e,cbe92aeadb236c1097cd6f6913961955"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>error_message</element>
+        <help/>
+        <hint/>
+        <label>Error Message</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_a6e9e6eadb236c1097cd6f69139619bc</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:44</sys_created_on>
+        <sys_id>03e92aeadb236c1097cd6f691396195d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Testt124" source="x_snc_testt124">81512e62db236c1097cd6f69139619d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>name</element>
+        <help/>
+        <hint/>
+        <label>Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_a6e9e6eadb236c1097cd6f69139619bc</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:44</sys_created_on>
+        <sys_id>0fe92aeadb236c1097cd6f691396193f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Testt124" source="x_snc_testt124">81512e62db236c1097cd6f69139619d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>content_type</element>
+        <help/>
+        <hint/>
+        <label>Content Type</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_a6e9e6eadb236c1097cd6f69139619bc</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:44</sys_created_on>
+        <sys_id>43e92aeadb236c1097cd6f6913961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Testt124" source="x_snc_testt124">81512e62db236c1097cd6f69139619d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>status</element>
+        <help/>
+        <hint/>
+        <label>Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_a6e9e6eadb236c1097cd6f69139619bc</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:44</sys_created_on>
+        <sys_id>87e92aeadb236c1097cd6f691396194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Testt124" source="x_snc_testt124">81512e62db236c1097cd6f69139619d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>content</element>
+        <help/>
+        <hint/>
+        <label>Content</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_a6e9e6eadb236c1097cd6f69139619bc</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:47:44</sys_created_on>
+        <sys_id>cbe92aeadb236c1097cd6f6913961955</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Testt124" source="x_snc_testt124">81512e62db236c1097cd6f69139619d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:47:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=a6e9e6eadb236c1097cd6f69139619bc^sys_idNOT IN242b626edb236c1097cd6f69139619fd"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Look up Attachment by Attachment ID">a6e9e6eadb236c1097cd6f69139619bc</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"242b626edb236c1097cd6f69139619fd","name":"plan"}}</plan>
+        <snapshot>a71b626edb236c1097cd6f691396193d</snapshot>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:53:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>242b626edb236c1097cd6f69139619fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:53:01</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="">bcb14ae6c3e320109d2353a3a840dda4</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description>&lt;p id="short_desc"&gt;This action provides Attachment when Attachment ID is provided&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Inputs&lt;/strong&gt; :&lt;/p&gt;
+&lt;ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Attachment ID&lt;/strong&gt; - Attachment ID of the Attachment&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Outputs&lt;/strong&gt; :&lt;/p&gt;
+&lt;ul id="outputs"&gt;
+&lt;li&gt;&lt;strong&gt;Status&lt;/strong&gt; - If the request is executed successfully, Status is set to “Success”. If there is a failure in Microsoft Exchange Server, Status is set to “Error”.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Content&lt;/strong&gt; - Content of the Attachment in the Binary Format&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Name&lt;/strong&gt; - Name of the Attachment as saved in the Exchange Server&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Content Type&lt;/strong&gt; - Content Type of the Attachment in text format&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Error Message&lt;/strong&gt; - Reason for error. Populated only when an error occurs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;To use this action, the corresponding Microsoft Exchange Server connection and credential must be created and associated with the Microsoft Exchange Server Connection &amp; Credential alias. &lt;a href="http://docs.servicenow.com/?context=CSHelp:credentials-connections-alias" target="_blank" rel="noopener"&gt;Learn More&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: Requires a subscription for production use. &lt;a href="https://docs.servicenow.com/?context=CSHelp:IntegrationHub-licensing-information" target="_blank" rel="noopener"&gt;Read More&lt;/a&gt;.&lt;/p&gt;</description>
+        <internal_name>look_up_attachment_by_attachment_id</internal_name>
+        <label_cache>[{"name":"{{action.attachment_id}}","label":"action➛Attachment ID","type":"action","ref":""},{"name":"{{step[2e301dc0-6dc7-42bc-89e2-8fe803c086fb].error_message}}","label":"step➛SOAP step➛Error Message","type":"step","ref":""},{"name":"{{step[2e301dc0-6dc7-42bc-89e2-8fe803c086fb].response_body}}","label":"step➛SOAP step➛Response Body","type":"step","ref":""},{"name":"{{step[2e301dc0-6dc7-42bc-89e2-8fe803c086fb].status_code}}","label":"step➛SOAP step➛Status Code","type":"step","ref":""},{"name":"{{step[30733be5-28cd-48ca-aa0e-6c0211def460].variable}}","label":"step➛Post Processing Step➛variable","type":"step","ref":""},{"name":"{{step[30733be5-28cd-48ca-aa0e-6c0211def460].name}}","label":"step➛Post Processing Step➛name","type":"step","ref":""},{"name":"{{step[30733be5-28cd-48ca-aa0e-6c0211def460].content_type}}","label":"step➛Post Processing Step➛content_type","type":"step","ref":""},{"name":"{{step[30733be5-28cd-48ca-aa0e-6c0211def460].status}}","label":"step➛Post Processing Step➛status","type":"step","ref":""},{"name":"{{step[30733be5-28cd-48ca-aa0e-6c0211def460].error_message}}","label":"step➛Post Processing Step➛error_message","type":"step","ref":""},{"name":"{{step[30733be5-28cd-48ca-aa0e-6c0211def460].content}}","label":"step➛Post Processing Step➛content","type":"step","ref":""}]</label_cache>
+        <master>true</master>
+        <name>Look up Attachment by Attachment ID</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Look up Attachment by Attachment ID">a6e9e6eadb236c1097cd6f69139619bc</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>061b226edb236c1097cd6f691396194b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:52</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=061b226edb236c1097cd6f691396194b"/>
+    <sys_variable_value action="delete_multiple" query="document_key=061b226edb236c1097cd6f691396194b"/>
+    <sys_element_mapping action="delete_multiple" query="id=061b226edb236c1097cd6f691396194b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>content</field>
+        <id>061b226edb236c1097cd6f691396194b</id>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:58</sys_created_on>
+        <sys_id>231b626edb236c1097cd6f691396193b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:58</sys_updated_on>
+        <table>var__m_sys_hub_action_output_061b226edb236c1097cd6f691396194b</table>
+        <value>{{step[30733be5-28cd-48ca-aa0e-6c0211def460].content}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>content_type</field>
+        <id>061b226edb236c1097cd6f691396194b</id>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:58</sys_created_on>
+        <sys_id>6f1b626edb236c1097cd6f691396193a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:58</sys_updated_on>
+        <table>var__m_sys_hub_action_output_061b226edb236c1097cd6f691396194b</table>
+        <value>{{step[30733be5-28cd-48ca-aa0e-6c0211def460].content_type}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>error_message</field>
+        <id>061b226edb236c1097cd6f691396194b</id>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:58</sys_created_on>
+        <sys_id>e71b626edb236c1097cd6f691396193a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:58</sys_updated_on>
+        <table>var__m_sys_hub_action_output_061b226edb236c1097cd6f691396194b</table>
+        <value>{{step[30733be5-28cd-48ca-aa0e-6c0211def460].error_message}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>name</field>
+        <id>061b226edb236c1097cd6f691396194b</id>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:58</sys_created_on>
+        <sys_id>ab1b626edb236c1097cd6f691396193a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:58</sys_updated_on>
+        <table>var__m_sys_hub_action_output_061b226edb236c1097cd6f691396194b</table>
+        <value>{{step[30733be5-28cd-48ca-aa0e-6c0211def460].name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status</field>
+        <id>061b226edb236c1097cd6f691396194b</id>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:58</sys_created_on>
+        <sys_id>e31b626edb236c1097cd6f691396193b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:58</sys_updated_on>
+        <table>var__m_sys_hub_action_output_061b226edb236c1097cd6f691396194b</table>
+        <value>{{step[30733be5-28cd-48ca-aa0e-6c0211def460].status}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=061b226edb236c1097cd6f691396194b^sys_idNOT IN121b226edb236c1097cd6f691396196f,d21b226edb236c1097cd6f6913961957"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Look up Attachment by Attachment ID">061b226edb236c1097cd6f691396194b</action>
+        <cid>30733be5-28cd-48ca-aa0e-6c0211def460</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Post Processing Step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:52</sys_created_on>
+        <sys_id>121b226edb236c1097cd6f691396196f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:55</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=121b226edb236c1097cd6f691396196f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>121b226edb236c1097cd6f691396196f</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:55</sys_created_on>
+        <sys_id>031b626edb236c1097cd6f6913961902</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:55</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+    if (inputs.status_code == '200' &amp;&amp; inputs.response) {
+      
+        var xmlDoc = new XMLDocument2();
+        xmlDoc.parseXML(inputs.response);
+        var responseStatus = xmlDoc.getNode(
+            "/s:Envelope/s:Body/m:GetAttachmentResponse/m:ResponseMessages/m:GetAttachmentResponseMessage"
+        ).getAttribute('ResponseClass');
+        if (responseStatus === 'Success') {
+            outputs.status = 'Success';
+            outputs.name = xmlDoc.getNodeText(
+                "/s:Envelope/s:Body/m:GetAttachmentResponse/m:ResponseMessages/m:GetAttachmentResponseMessage/m:Attachments/t:FileAttachment/t:Name");
+            outputs.content_type = xmlDoc.getNodeText(
+                "/s:Envelope/s:Body/m:GetAttachmentResponse/m:ResponseMessages/m:GetAttachmentResponseMessage/m:Attachments/t:FileAttachment/t:ContentType");
+			outputs.content = xmlDoc.getNodeText(
+                "/s:Envelope/s:Body/m:GetAttachmentResponse/m:ResponseMessages/m:GetAttachmentResponseMessage/m:Attachments/t:FileAttachment/t:Content");
+        } else
+            outputs = new ExchangeErrorHandler().lookUpAttachment(
+                inputs, outputs);
+    } else
+        outputs = new ExchangeErrorHandler().lookUpAttachment(
+            inputs, outputs);
+})(inputs, outputs);</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>121b226edb236c1097cd6f691396196f</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:55</sys_created_on>
+        <sys_id>4f1b626edb236c1097cd6f6913961901</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:55</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=121b226edb236c1097cd6f691396196f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>121b226edb236c1097cd6f691396196f</id>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:55</sys_created_on>
+        <sys_id>0b1b626edb236c1097cd6f6913961901</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:55</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>error_message</field>
+        <id>121b226edb236c1097cd6f691396196f</id>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:55</sys_created_on>
+        <sys_id>8b1b626edb236c1097cd6f6913961902</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:55</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_121b226edb236c1097cd6f691396196f</table>
+        <value>{{step[2e301dc0-6dc7-42bc-89e2-8fe803c086fb].error_message}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response</field>
+        <id>121b226edb236c1097cd6f691396196f</id>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:55</sys_created_on>
+        <sys_id>031b626edb236c1097cd6f6913961903</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:55</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_121b226edb236c1097cd6f691396196f</table>
+        <value>{{step[2e301dc0-6dc7-42bc-89e2-8fe803c086fb].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>121b226edb236c1097cd6f691396196f</id>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:55</sys_created_on>
+        <sys_id>cb1b626edb236c1097cd6f6913961901</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:55</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status_code</field>
+        <id>121b226edb236c1097cd6f691396196f</id>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:55</sys_created_on>
+        <sys_id>4f1b626edb236c1097cd6f6913961902</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:55</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_121b226edb236c1097cd6f691396196f</table>
+        <value>{{step[2e301dc0-6dc7-42bc-89e2-8fe803c086fb].status_code}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=121b226edb236c1097cd6f691396196f^sys_idNOT IN1e1b226edb236c1097cd6f691396197f,561b226edb236c1097cd6f6913961972,561b226edb236c1097cd6f6913961979"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status_code</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>status_code</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Post Processing Step">121b226edb236c1097cd6f691396196f</model>
+        <model_id>121b226edb236c1097cd6f691396196f</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_121b226edb236c1097cd6f691396196f</name>
+        <next_element/>
+        <order>200</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:53</sys_created_on>
+        <sys_id>1e1b226edb236c1097cd6f691396197f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>error_message</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>error_message</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Post Processing Step">121b226edb236c1097cd6f691396196f</model>
+        <model_id>121b226edb236c1097cd6f691396196f</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_121b226edb236c1097cd6f691396196f</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:52</sys_created_on>
+        <sys_id>561b226edb236c1097cd6f6913961972</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>response</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Post Processing Step">121b226edb236c1097cd6f691396196f</model>
+        <model_id>121b226edb236c1097cd6f691396196f</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_121b226edb236c1097cd6f691396196f</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:52</sys_created_on>
+        <sys_id>561b226edb236c1097cd6f6913961979</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=121b226edb236c1097cd6f691396196f^sys_idNOT IN0b1b226edb236c1097cd6f69139619b3,431b226edb236c1097cd6f69139619ad,c31b226edb236c1097cd6f69139619f8,da1b226edb236c1097cd6f6913961986,da1b226edb236c1097cd6f691396198d"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=56b158c5-ca23-4b14-9c1c-b664896fbaec</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>error_message</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>error_message</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Post Processing Step">121b226edb236c1097cd6f691396196f</model>
+        <model_id>121b226edb236c1097cd6f691396196f</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_121b226edb236c1097cd6f691396196f</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:55</sys_created_on>
+        <sys_id>0b1b226edb236c1097cd6f69139619b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=6c83cfda-f940-4523-95cb-b8f097da1318</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>status</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Post Processing Step">121b226edb236c1097cd6f691396196f</model>
+        <model_id>121b226edb236c1097cd6f691396196f</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_121b226edb236c1097cd6f691396196f</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:55</sys_created_on>
+        <sys_id>431b226edb236c1097cd6f69139619ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=c3836dc6-0cfc-42e4-bd91-f19761e9face</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>content</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>content</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Post Processing Step">121b226edb236c1097cd6f691396196f</model>
+        <model_id>121b226edb236c1097cd6f691396196f</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_121b226edb236c1097cd6f691396196f</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:55</sys_created_on>
+        <sys_id>c31b226edb236c1097cd6f69139619f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=19ca9c73-554d-4aaa-8429-f3e439301903</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>name</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Post Processing Step">121b226edb236c1097cd6f691396196f</model>
+        <model_id>121b226edb236c1097cd6f691396196f</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_121b226edb236c1097cd6f691396196f</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:53</sys_created_on>
+        <sys_id>da1b226edb236c1097cd6f6913961986</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=f06e1b2a-5306-493e-a033-0cb63b814e8e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>content_type</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>content_type</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Post Processing Step">121b226edb236c1097cd6f691396196f</model>
+        <model_id>121b226edb236c1097cd6f691396196f</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_121b226edb236c1097cd6f691396196f</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:53</sys_created_on>
+        <sys_id>da1b226edb236c1097cd6f691396198d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Look up Attachment by Attachment ID">061b226edb236c1097cd6f691396194b</action>
+        <cid>2e301dc0-6dc7-42bc-89e2-8fe803c086fb</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>SOAP step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="SOAP">6e61d40e73031300e6561afe2ff6a704</step_type>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:52</sys_created_on>
+        <sys_id>d21b226edb236c1097cd6f6913961957</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:52</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d21b226edb236c1097cd6f6913961957"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d21b226edb236c1097cd6f6913961957</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:52</sys_created_on>
+        <sys_id>121b226edb236c1097cd6f691396196b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:52</sys_updated_on>
+        <value>d666400bdb3f27001b5857935e96193f</value>
+        <variable display_value="Connection Alias">33a1180e73031300e6561afe2ff6a7b9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d21b226edb236c1097cd6f6913961957</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:52</sys_created_on>
+        <sys_id>161b226edb236c1097cd6f691396196a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:52</sys_updated_on>
+        <value>Select a WSDL</value>
+        <variable display_value="Select a WSDL">e5b29c0e73031300e6561afe2ff6a713</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d21b226edb236c1097cd6f6913961957</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:52</sys_created_on>
+        <sys_id>521b226edb236c1097cd6f691396196a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:52</sys_updated_on>
+        <value>9df941930a00067818fcb3834b216f8f</value>
+        <variable display_value="Capabilities">1bd3635a738b1300803594596bf6a7e9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d21b226edb236c1097cd6f6913961957</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:52</sys_created_on>
+        <sys_id>5e1b226edb236c1097cd6f691396196a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:52</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">2d922f1a738b1300803594596bf6a727</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d21b226edb236c1097cd6f6913961957</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:52</sys_created_on>
+        <sys_id>9a1b226edb236c1097cd6f691396196a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:52</sys_updated_on>
+        <value>https://exchange-2016.servicenow.com/EWS/Exchange.asmx</value>
+        <variable display_value="Endpoint">9a521c0e73031300e6561afe2ff6a709</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d21b226edb236c1097cd6f6913961957</document_key>
+        <order>110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:52</sys_created_on>
+        <sys_id>9e1b226edb236c1097cd6f6913961969</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:52</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Headers">72171c8e73031300e6561afe2ff6a7c2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d21b226edb236c1097cd6f6913961957</document_key>
+        <order>40</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:52</sys_created_on>
+        <sys_id>d21b226edb236c1097cd6f691396196b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:52</sys_updated_on>
+        <value>manually</value>
+        <variable display_value="Build Envelope">b3721c0e73031300e6561afe2ff6a7a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d21b226edb236c1097cd6f6913961957</document_key>
+        <order>70</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:52</sys_created_on>
+        <sys_id>d61b226edb236c1097cd6f691396196a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:52</sys_updated_on>
+        <value>POST</value>
+        <variable display_value="SOAP Action">2d13d84e73031300e6561afe2ff6a736</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d21b226edb236c1097cd6f6913961957"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>d21b226edb236c1097cd6f6913961957</id>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:52</sys_created_on>
+        <sys_id>d21b226edb236c1097cd6f6913961969</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:52</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_6e61d40e73031300e6561afe2ff6a704</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>build_envelope</field>
+        <id>d21b226edb236c1097cd6f6913961957</id>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:52</sys_created_on>
+        <sys_id>1e1b226edb236c1097cd6f6913961969</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:52</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_6e61d40e73031300e6561afe2ff6a704</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>d21b226edb236c1097cd6f6913961957</id>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:52</sys_created_on>
+        <sys_id>d61b226edb236c1097cd6f6913961968</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:52</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_6e61d40e73031300e6561afe2ff6a704</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>d21b226edb236c1097cd6f6913961957</id>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:52</sys_created_on>
+        <sys_id>961b226edb236c1097cd6f6913961969</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:52</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_6e61d40e73031300e6561afe2ff6a704</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>endpoint</field>
+        <id>d21b226edb236c1097cd6f6913961957</id>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:52</sys_created_on>
+        <sys_id>121b226edb236c1097cd6f6913961969</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:52</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_6e61d40e73031300e6561afe2ff6a704</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>d21b226edb236c1097cd6f6913961957</id>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:52</sys_created_on>
+        <sys_id>161b226edb236c1097cd6f6913961968</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:52</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_6e61d40e73031300e6561afe2ff6a704</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>select_a_wsdl</field>
+        <id>d21b226edb236c1097cd6f6913961957</id>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:52</sys_created_on>
+        <sys_id>9a1b226edb236c1097cd6f6913961968</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:52</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_6e61d40e73031300e6561afe2ff6a704</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>soap_action</field>
+        <id>d21b226edb236c1097cd6f6913961957</id>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:52</sys_created_on>
+        <sys_id>5e1b226edb236c1097cd6f6913961968</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:52</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_6e61d40e73031300e6561afe2ff6a704</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>soap_envelope</field>
+        <id>d21b226edb236c1097cd6f6913961957</id>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:52</sys_created_on>
+        <sys_id>5a1b226edb236c1097cd6f6913961969</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:52</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_6e61d40e73031300e6561afe2ff6a704</table>
+        <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:m="http://schemas.microsoft.com/exchange/services/2006/messages" xmlns:t="http://schemas.microsoft.com/exchange/services/2006/types" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+&lt;soap:Header&gt;
+        &lt;t:RequestServerVersion Version="Exchange2013" /&gt;
+&lt;/soap:Header&gt;
+  &lt;soap:Body&gt;
+    &lt;m:GetAttachment&gt;
+      &lt;m:AttachmentShape/&gt;
+      &lt;m:AttachmentIds&gt;
+        &lt;t:AttachmentId Id="{{action.attachment_id}}"/&gt;
+      &lt;/m:AttachmentIds&gt;
+    &lt;/m:GetAttachment&gt;
+  &lt;/soap:Body&gt;
+&lt;/soap:Envelope&gt;</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=d21b226edb236c1097cd6f6913961957^sys_idNOT IN521b226edb236c1097cd6f691396195d"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=c242814b-5794-4ca4-9688-b0b6487c4a11</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="SOAP step">d21b226edb236c1097cd6f6913961957</model>
+        <model_id>d21b226edb236c1097cd6f6913961957</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_d21b226edb236c1097cd6f6913961957</name>
+        <next_element/>
+        <order>7</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:52</sys_created_on>
+        <sys_id>521b226edb236c1097cd6f691396195d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_action_input action="delete_multiple" query="model=061b226edb236c1097cd6f691396194b^sys_idNOT IN0a1b226edb236c1097cd6f691396194e"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=092679c8-f1b2-4d67-935a-41120274d917</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>attachment_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Attachment ID</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look up Attachment by Attachment ID">061b226edb236c1097cd6f691396194b</model>
+        <model_id>061b226edb236c1097cd6f691396194b</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_061b226edb236c1097cd6f691396194b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:52</sys_created_on>
+        <sys_id>0a1b226edb236c1097cd6f691396194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="delete_multiple" query="model=061b226edb236c1097cd6f691396194b^sys_idNOT IN031b626edb236c1097cd6f691396191d,4b1b626edb236c1097cd6f6913961906,671b626edb236c1097cd6f6913961924,871b626edb236c1097cd6f691396190e,cb1b626edb236c1097cd6f6913961915"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=2ccdd52b-77b3-4dc5-92a4-91807adc932f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>content</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Content</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look up Attachment by Attachment ID">061b226edb236c1097cd6f691396194b</model>
+        <model_id>061b226edb236c1097cd6f691396194b</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_061b226edb236c1097cd6f691396194b</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:56</sys_created_on>
+        <sys_id>031b626edb236c1097cd6f691396191d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=51afcc8a-4f44-483d-835e-a6445e9ee9ec</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>name</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Name</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look up Attachment by Attachment ID">061b226edb236c1097cd6f691396194b</model>
+        <model_id>061b226edb236c1097cd6f691396194b</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_061b226edb236c1097cd6f691396194b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:56</sys_created_on>
+        <sys_id>4b1b626edb236c1097cd6f6913961906</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=97228bc0-4816-48c3-8f1a-36320e184249</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>error_message</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Error Message</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look up Attachment by Attachment ID">061b226edb236c1097cd6f691396194b</model>
+        <model_id>061b226edb236c1097cd6f691396194b</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_061b226edb236c1097cd6f691396194b</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:58</sys_created_on>
+        <sys_id>671b626edb236c1097cd6f6913961924</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=2c567999-1976-42c2-9004-5a173e47b17d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>content_type</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Content Type</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look up Attachment by Attachment ID">061b226edb236c1097cd6f691396194b</model>
+        <model_id>061b226edb236c1097cd6f691396194b</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_061b226edb236c1097cd6f691396194b</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:56</sys_created_on>
+        <sys_id>871b626edb236c1097cd6f691396190e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=260a69dd-cd6e-4df5-9c4d-a27236758af5</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Status</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look up Attachment by Attachment ID">061b226edb236c1097cd6f691396194b</model>
+        <model_id>061b226edb236c1097cd6f691396194b</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_061b226edb236c1097cd6f691396194b</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:56</sys_created_on>
+        <sys_id>cb1b626edb236c1097cd6f6913961915</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_061b226edb236c1097cd6f691396194b^sys_idNOT IN8a1b226edb236c1097cd6f6913961954"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>attachment_id</element>
+        <help/>
+        <hint/>
+        <label>Attachment ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_061b226edb236c1097cd6f691396194b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:52</sys_created_on>
+        <sys_id>8a1b226edb236c1097cd6f6913961954</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Testt124" source="x_snc_testt124">81512e62db236c1097cd6f69139619d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:52</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_061b226edb236c1097cd6f691396194b^sys_idNOT IN031b626edb236c1097cd6f6913961914,471b626edb236c1097cd6f691396191b,a71b626edb236c1097cd6f6913961936,ab1b626edb236c1097cd6f6913961922,cb1b626edb236c1097cd6f691396190c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>content_type</element>
+        <help/>
+        <hint/>
+        <label>Content Type</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_061b226edb236c1097cd6f691396194b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:56</sys_created_on>
+        <sys_id>031b626edb236c1097cd6f6913961914</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Testt124" source="x_snc_testt124">81512e62db236c1097cd6f69139619d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>status</element>
+        <help/>
+        <hint/>
+        <label>Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_061b226edb236c1097cd6f691396194b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:56</sys_created_on>
+        <sys_id>471b626edb236c1097cd6f691396191b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Testt124" source="x_snc_testt124">81512e62db236c1097cd6f69139619d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>error_message</element>
+        <help/>
+        <hint/>
+        <label>Error Message</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_061b226edb236c1097cd6f691396194b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:58</sys_created_on>
+        <sys_id>a71b626edb236c1097cd6f6913961936</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Testt124" source="x_snc_testt124">81512e62db236c1097cd6f69139619d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>content</element>
+        <help/>
+        <hint/>
+        <label>Content</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_061b226edb236c1097cd6f691396194b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:58</sys_created_on>
+        <sys_id>ab1b626edb236c1097cd6f6913961922</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Testt124" source="x_snc_testt124">81512e62db236c1097cd6f69139619d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>name</element>
+        <help/>
+        <hint/>
+        <label>Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_061b226edb236c1097cd6f691396194b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:52:56</sys_created_on>
+        <sys_id>cb1b626edb236c1097cd6f691396190c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Testt124" source="x_snc_testt124">81512e62db236c1097cd6f69139619d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:52:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDd03aaeeaf9236c10a9aea33c7ba4fac9</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>81512e62db236c1097cd6f69139619d9</scope_name>
+        <serialized_content>{"FlowDesigner:FDd03aaeeaf9236c10a9aea33c7ba4fac9":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDd03aaeeaf9236c10a9aea33c7ba4fac9.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Event IDs\",\"mandatory\":\"false\",\"child_name\":\"Event IDs_child0\",\"uiUniqueId\":\"dfdc4c38-7620-49d6-8adc-00d8e4541a8d\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FDd03aaeeaf9236c10a9aea33c7ba4fac9\",\"child_label\":\"Event IDs_child0\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"array.string\",\"child_defaultValue\":\"\",\"child_type\":\"string\",\"order\":\"4\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"cca555a4-377b-4a7d-b7fa-83cffde04922\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>aniket.agrawal@snc</sys_created_by>
+        <sys_created_on>2021-04-19 09:48:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>943aaeeadb236c1097cd6f69139619c9</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>FDd03aaeeaf9236c10a9aea33c7ba4fac9</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Testt124" source="x_snc_testt124">81512e62db236c1097cd6f69139619d9</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+        <sys_update_name>sys_complex_object_943aaeeadb236c1097cd6f69139619c9</sys_update_name>
+        <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+        <sys_updated_on>2021-04-19 09:49:57</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>

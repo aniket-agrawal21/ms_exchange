@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="status" table="var__m_sys_hub_action_output_3ef37551c32724109d2353a3a840dd3c" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <name>var__m_sys_hub_action_output_3ef37551c32724109d2353a3a840dd3c</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>aniket.agrawal@snc</sys_created_by>
+            <sys_created_on>2021-04-19 09:31:02</sys_created_on>
+            <sys_id>6616aaa6db236c1097cd6f69139619e8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>status</sys_name>
+            <sys_package display_value="Testt124" source="x_snc_testt124">81512e62db236c1097cd6f69139619d9</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Testt124">81512e62db236c1097cd6f69139619d9</sys_scope>
+            <sys_update_name>sys_choice_var__m_sys_hub_action_output_3ef37551c32724109d2353a3a840dd3c_status</sys_update_name>
+            <sys_updated_by>aniket.agrawal@snc</sys_updated_by>
+            <sys_updated_on>2021-04-19 09:31:02</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Success</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_output_3ef37551c32724109d2353a3a840dd3c</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-04-15 08:39:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>83f37551c32724109d2353a3a840ddb8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-04-15 08:39:39</sys_updated_on>
+            <value>Success</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Error</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_output_3ef37551c32724109d2353a3a840dd3c</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-04-15 08:39:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4ff37551c32724109d2353a3a840ddb9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-04-15 08:39:39</sys_updated_on>
+            <value>Error</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>
